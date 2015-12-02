@@ -1,0 +1,2 @@
+# dziennik
+Dev c++ dziennik
