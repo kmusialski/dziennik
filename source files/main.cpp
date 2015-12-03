@@ -24,7 +24,7 @@ int main() {
 Subject createSubject(string name) { // funkcja
     Subject result;  // stworzenie zmienne result typu subject (klasa)
     result.setName(name);// wywolanie na zmiennej funkcji set name.
-    result.countAverage();
 	result.setMarks(); // wywolanie funkcji setMarks w której zadeklaruje oceny(marks) - w klasie subject
-    return result; //zwrocenie zmiennej z funkcji createSubject
+    result.countAverage(); // wywolanie funkcji countAverage do obliczenia sredniej
+	return result; //zwrocenie zmiennej z funkcji createSubject
 }

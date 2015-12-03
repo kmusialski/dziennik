@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=17
+UnitCount=9
 
 [VersionInfo]
 Major=1
@@ -51,15 +51,6 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=..\..\..\Dev-Cpp\dziennik-ocen-master1\.gitignore
-Folder=
-Compile=0
-Link=0
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit2]
 FileName=source files\CMakeLists.txt
 Folder=
 Compile=0
@@ -68,18 +59,19 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit3]
+[Unit2]
 FileName=source files\main.cpp
-CompileCpp=1
 Folder=
 Compile=1
 Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
 
-[Unit4]
-FileName=..\..\..\Dev-Cpp\dziennik-ocen-master1\main.o
+[Unit3]
+FileName=source files\Makefile.win.cpp
+CompileCpp=1
 Folder=
 Compile=0
 Link=0
@@ -87,8 +79,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
-FileName=source files\Makefile.win.cpp
+[Unit4]
+FileName=source files\projekt.layout.cpp
 Folder=
 Compile=0
 Link=0
@@ -97,38 +89,51 @@ OverrideBuildCmd=0
 BuildCmd=
 CompileCpp=1
 
-[Unit6]
-FileName=..\..\..\Dev-Cpp\dziennik-ocen-master1\Note 0.1
+[Unit5]
+FileName=source files\Subject.cpp
 Folder=
-Compile=0
-Link=0
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
+
+[Unit6]
+FileName=source files\Subject.h
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+CompileCpp=1
 
 [Unit7]
-FileName=..\..\..\Dev-Cpp\dziennik-ocen-master1\Note 0.layout
+FileName=source files\Utils.cpp
 Folder=
-Compile=0
-Link=0
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
 
 [Unit8]
-FileName=..\..\..\Dev-Cpp\dziennik-ocen-master1\projekt
+FileName=source files\Utils.h
 Folder=
-Compile=0
-Link=0
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
+CompileCpp=1
 
 [Unit9]
-FileName=source files\projekt.layout.cpp
+FileName=Average.h
 Folder=
-Compile=0
-Link=0
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
