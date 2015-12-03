@@ -1,7 +1,6 @@
 //
 // Created by Piotr on 2015-11-28.
 //
-
 #include "Subject.h"
 #include "Utils.h"
 #include <limits>

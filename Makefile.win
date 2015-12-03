@@ -1,17 +1,17 @@
 # Project: DziennikOcen
 # Makefile created by Dev-C++ 5.11
 
-CPP      = g++.exe
-CC       = gcc.exe
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = "source\ files/main.o" "source\ files/Subject.o" "source\ files/Utils.o"
-LINKOBJ  = "source files/main.o" "source files/Subject.o" "source files/Utils.o"
-LIBS     = -L"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/lib" -L"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
-INCS     = -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/include" -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/include" -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Users/kmusialski/Downloads/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = DziennikOcen.exe
-CXXFLAGS = $(CXXINCS) 
-CFLAGS   = $(INCS) 
+OBJ      = "source\ files/main.o" "source\ files/Subject.o" "source\ files/Utils.o" "source\ files/Note.o"
+LINKOBJ  = "source files/main.o" "source files/Subject.o" "source files/Utils.o" "source files/Note.o"
+LIBS     = -L"D:/Dev-Cpp/MinGW32/lib" -L"D:/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -g3
+INCS     = -I"D:/Dev-Cpp/MinGW32/include" -I"D:/Dev-Cpp/MinGW32/mingw32/include" -I"D:/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW32/include" -I"D:/Dev-Cpp/MinGW32/mingw32/include" -I"D:/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"D:/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
+BIN      = "DziennikOcen 0.exe"
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -32,3 +32,6 @@ $(BIN): $(OBJ)
 
 "source\ files/Utils.o": source\ files/Utils.cpp
 	$(CPP) -c "source files/Utils.cpp" -o "source files/Utils.o" $(CXXFLAGS)
+
+"source\ files/Note.o": source\ files/Note.cpp
+	$(CPP) -c "source files/Note.cpp" -o "source files/Note.o" $(CXXFLAGS)
