@@ -12,7 +12,8 @@ using namespace std;
 int main() {
 
 Note dziennik = createNote();
-dziennik.calculateAverageFromAllSubjects();
+dziennik.calculateAverageFromAllSubjects(); // i tu tez liczyl calculate
+cout<<endl;
 dziennik.printAverage();
 
 }
@@ -23,8 +24,8 @@ Note createNote(){
 	
 	note.addSubject(createSubject("matematyka"));
 	note.addSubject(createSubject("polski"));
-	note.addSubject(createSubject("fizyka"));
-	note.addSubject(createSubject("chemia"));
+	//note.addSubject(createSubject("fizyka"));
+	//note.addSubject(createSubject("chemia"));
 	
 return note; 
 
@@ -35,6 +36,7 @@ Subject createSubject(string name) { // funkcja
     Subject result;  // stworzenie zmienne result typu subject (klasa)
     result.setName(name);// wywolanie na zmiennej funkcji set name.
 	result.setMarks(); // wywolanie funkcji setMarks w której zadeklaruje oceny(marks) - w klasie subject
+	result.printSubject();
     result.countAverage(); // wywolanie funkcji countAverage do obliczenia sredniej
 	return result; //zwrocenie zmiennej z funkcji createSubject
 }

@@ -1,5 +1,5 @@
 #include "Note.h"
-
+float result = 0;
 void Note::addSubject(Subject sub)
 {
 	subjects.push_back(sub);
@@ -7,11 +7,10 @@ void Note::addSubject(Subject sub)
 
 float Note::calculateAverageFromAllSubjects()
 {
-	float result = 0;
+	
 	for (list<Subject>::iterator i = subjects.begin(); i != subjects.end(); ++i) {
 		
 		result = result + i->countAverage(); 
-		cout<<result; 
     }
     result = result/subjects.size();
     return result;
@@ -20,7 +19,7 @@ float Note::calculateAverageFromAllSubjects()
 void Note::printAverage() {
     cout << "Srednia ocen"<<endl;
     
-    cout <<calculateAverageFromAllSubjects()<< endl;;
+    cout <<result; // tu byl b³ad bo wyrzuca³ wynik funkcji calculate 
 
 }
 

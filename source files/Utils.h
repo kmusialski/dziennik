@@ -1,5 +1,5 @@
 //
-// Created by Piotr on 2015-11-28.
+// Created by Kamil on 2015-11-28.
 //
 
 #ifndef TEST2_UTILS_H

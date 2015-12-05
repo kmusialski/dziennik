@@ -1,5 +1,5 @@
 //
-// Created by Piotr on 2015-11-28.
+// Created by Kamil on 2015-11-28.
 //
 #include "Subject.h"
 #include "Utils.h"
@@ -22,6 +22,7 @@ void Subject::printSubject() {
         cout << *i << " ";
     }
     countAverage();
+    cout<<" ";
     cout <<countAverage()<< endl;;
 
 }
